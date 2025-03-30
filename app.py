@@ -36,17 +36,7 @@ def get_last_student():
         if len(rows) < 2:  # If only header exists or empty
             return None, None
         last_row = rows[-1]
-        return last_row[4], last_row[0]  # Assuming Email is in column 0, ID in column 
-
-
-
-
-
-
-
-
-
-
+        return last_row[4], last_row[0]  #email column 4
 
 
 @app.route('/send_email', methods=['POST'])
